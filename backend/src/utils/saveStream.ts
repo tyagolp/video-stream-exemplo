@@ -8,11 +8,13 @@ if (!fs.existsSync(hlsDirectory)) {
   fs.mkdirSync(hlsDirectory);
 }
 
+const senha = "xxxxx"
+const host = "192.168.100.154:554"
+
 // Função para iniciar a conversão de RTSP para HLS
 export const saveStartStreaming = () => {
   // URL do stream RTSP da câmera IP
-  const rtspUrl = "rtsp://admin:Tera102030@192.168.100.154:554/ao_vivo/0/MAIN";
-  // const rtspUrl = "rtsp://admin:Tera102030@192.168.100.154:554/ao_vivo/0/SUB";
+  const rtspUrl = `rtsp://admin:${senha}@${host}/ao_vivo/0/MAIN`;
   const outputPath = path.join(hlsDirectory, "playlist.m3u8");
 
   ffmpeg(rtspUrl)
