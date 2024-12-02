@@ -1,10 +1,10 @@
 # video-stream-exemplo
 
-## Tecnologias
+## > Tecnologias
 NodeJS, ReacJS, ReactNative, WebSocket, ffmpeg, EXPO
 
 
-## Detalhes dos projetos
+## > Detalhes dos projetos
 
 ### Backend
 Feito em NodeJS o projeto faz uso da uma camera IP para obter a transmissão aovivo via RSTP e realiza a conversão do video em hsl transmitindo via Websocket
